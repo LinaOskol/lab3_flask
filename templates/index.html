@@ -13,56 +13,61 @@
 <form action="" method="post" class="box">
     <fieldset>
         <legend>Ипотечный калькулятор</legend>
-        <div class="row mb-3" >
-            <label for="inputsumm" class="col-sm-2 col-form-label">Стоимость недвижимости</label>
-            <div class="col-sm-10">
-                <input name="summ" class="form-control" id="inputsumm" style="margin-left:50px">
-            </div>
-        </div>
-        <div class="row mb-3">
-            <label for="inputfirst_installment" class="col-sm-2 col-form-label">Первоначальный взнос</label>
-            <div class="col-sm-10">
-                <input name="first_installment" class="form-control" id="inputfirst_installment" style="margin-left:50px">
-            </div>
-        </div>
-
-
-        <div class="row md-3">
-            <label for="inputmonth" class="col-sm-2 col-form-label">Срок кредита</label>
-            <div class="col-sm-10">
-                <input name="month" class="form-control" id="inputmonth"   style="margin-left:50px">
-            </div>
-        </div>
-        <div class="row mb-3" style="margin-top:20px">
-            <label for="inputpercent" class="col-sm-2 col-form-label">Процентная ставка</label>
-            <div class="col-sm-10">
-                <input name="percent" class="form-control" id="inputpercent" style="margin-left:50px">
-            </div>
-        </div>
-
-        <div class="row mb-3" style="margin-top:20px">
-            <legend class="col-form-label col-sm-2 pt-0">Тип ежемесечных платежей</legend>
-            <div class="col-sm-10">
-                <div class="form-check" style="margin-left:50px">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
-                           checked >
-                    <label class="form-check-label" for="gridRadios1">
-                        Аннуитетные
-                    </label>
-                </div>
-                <div class="form-check" style="margin-left:50px">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios2">
-                        Дифференцированные
-                    </label>
+        <div class="border border-primary rounded" style="width:100%; margin-top: 10px; padding: 5px;">
+            <div class="row mb-3">
+                <label for="inputsumm" class="col-sm-2 col-form-label">Стоимость недвижимости</label>
+                <div class="col-sm-10">
+                    <input name="summ" class="form-control" id="inputsumm" style="margin-left:50px; width:85%;margin-top: 10px;">
                 </div>
             </div>
+            <div class="row mb-3">
+                <label for="inputfirst_installment" class="col-sm-2 col-form-label">Первоначальный взнос</label>
+                <div class="col-sm-10">
+                    <input name="first_installment" class="form-control" id="inputfirst_installment"
+                           style="margin-left:50px; width:85%" >
+                </div>
+            </div>
+
+
+            <div class="row md-3">
+                <label for="inputmonth" class="col-sm-2 col-form-label">Срок кредита</label>
+                <div class="col-sm-10">
+                    <input name="month" class="form-control" id="inputmonth" style="margin-left:50px; width:85%">
+                </div>
+            </div>
+            <div class="row mb-3" style="margin-top:20px">
+                <label for="inputpercent" class="col-sm-2 col-form-label">Процентная ставка</label>
+                <div class="col-sm-10">
+                    <input name="percent" class="form-control" id="inputpercent" style="margin-left:50px; width:85%">
+                </div>
+            </div>
+
+            <div class="row mb-3" style="margin-top:20px">
+                <legend class="col-form-label col-sm-2 pt-0">Тип ежемесечных платежей</legend>
+                <div class="col-sm-10">
+                    <div class="form-check" style="margin-left:50px">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                               checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            Аннуитетные
+                        </label>
+                    </div>
+                    <div class="form-check" style="margin-left:50px">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                            Дифференцированные
+                        </label>
+                    </div>
+                </div>
+            </div>
         </div>
-    <input type="submit" value="Рассчитать">
-    <div>
-        <h3>Cумма кредита: {{credite}}</h3>
-        <h3>Ежемесячный платёж: {{every_month}}</h3>
-    </div>
+        <input type="submit" value="Рассчитать">
+        <div class="border border-primary rounded" style="width:100%; margin-top: 10px; padding: 5px;">
+            <div>
+                <h3>Cумма кредита: {{credite}}</h3>
+                <h3>Ежемесячный платёж: {{every_month}}</h3>
+            </div>
+        </div>
     </fieldset>
 </form>
 
@@ -72,6 +77,7 @@
   align-items: center;
   justify-content: center;
 }
+
 </style>
 </body>
 </html>
