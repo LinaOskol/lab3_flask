@@ -14,14 +14,14 @@ class TestApp(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
 
     # проверка прихода данных с option1
-    def test_form_route_with_post_request_and_option1(self):
+    def test_option1(self):
         response = self.client.post('/', data={'summ': '2000000', 'first_installment': '500000', 'month': '15',
                                                'percent': '12', 'gridRadios': 'option1'})
         self.assertIn(b'18003', response.data)
         self.assertIn(b'1500000', response.data)
 
     # проверка данных с option2
-    def test_form_route_with_post_request_and_option2(self):
+    def test_option2(self):
         response = self.client.post('/', data={'summ': '2000000', 'first_installment': '500000', 'month': '15',
                                                'percent': '12', 'gridRadios': 'option2'})
         self.assertIn(b"23333", response.data)
